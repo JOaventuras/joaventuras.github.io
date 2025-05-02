@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
 
@@ -147,7 +148,7 @@ section {
 }
 
 .section-menu-lateral{
-    margin-left: 80px;
+    margin-left: 50px;
 
 }
 
@@ -156,11 +157,11 @@ section {
     background-color: #333;
     border: 1px solid #494444;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 2px;
-    width: 275px;
+    margin: 60px;
+    padding: 0px;
+    width: 300px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
@@ -241,6 +242,47 @@ section {
 }
 
 
+
+
+
+.libro.info-extra {
+    background-color: #f1eeee;
+    color: #000;
+    border: 4px dashed #333;
+    padding: 25px 20px;
+    text-align: left;
+    font-size: 1.05em;
+    line-height: 1.6;
+    width: 275px; /* igual que las otras tarjetas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.libro.info-extra h2 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.libro.info-extra p {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.nota-editorial {
+    font-size: 0.7em !important;
+    color: #757575;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
 /*######################### M E N U   L A T E R A L ######################### */
 
 .color-invertido {
@@ -306,7 +348,7 @@ main {
     flex: 1;
     max-width: 100%; /* Ajusta según sea necesario */
     overflow-y: auto; /* Agrega barra de desplazamiento vertical si el contenido es más grande que la ventana */
-    margin-top: 25px;
+    margin-top: 150px;
 }
 
 
@@ -341,52 +383,98 @@ body {
     margin: 0;
 }
 
+
+
+/* Asegúrate de que no haya subrayado en cualquier enlace dentro de las tarjetas */
+.tarjeta a {
+    text-decoration: none !important; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del contenedor */
+}
+
+/* Reglas generales para el contenedor y las tarjetas */
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .tarjeta {
-    flex: 1;
-    width: 90%; /* Ancho relativo para pantallas más pequeñas */
-    max-width: 400px; /* Ancho máximo para pantallas medianas y grandes */
-    min-height: 300px; /* Altura mínima */
-    max-height: 400px; /* Altura máxima */
-    margin: 20px;
-    padding: 20px;
+    flex: 1 1 22%;
+    max-width: 22%; /* Ancho máximo para pantallas medianas y grandes */
+    min-width: 200px;
+    min-height: 400px;  /* Ajusta la altura mínima de las tarjetas */
+    height: auto;  /* Permite que la tarjeta se ajuste dinámicamente en altura según su contenido */
+    margin: 30px;
+    padding: 30px;
     box-sizing: border-box;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Elimina subrayado en la tarjeta */
+    color: inherit; /* Hereda el color de la tarjeta */
+}
+
+.contenido-tarjeta {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .tarjeta h2 {
     color: #ffffff;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
 }
-
 
 .tarjeta p {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none; /* Asegúrate de que el texto no esté subrayado */
+    margin-top: 200px;
+    padding: 5px;
 
 }
 
+/* Definir el fondo de las tarjetas con imágenes */
 .tarjeta-batman {
-    background-image: url(images/batman.jpg);
+    background-image: url(images/batman-background.jpg);
+    background-size: cover;
+    background-position: right;
+
+}
+
+.tarjeta-jojos {
+    background-image: url(images/jojos-parte1.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.tarjeta-simpsons {
+    background-image: url(images/simpsons-comics-1.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+
+.tarjeta-flash-rebirth {
+    background-image: url(images/flash\ background.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.tarjeta-jojos {
-    background-image: url(images/jotaro.jpg);
+.tarjeta-flash-new52 {
+    background-image: url(images/flhas\ gorilla\ war.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: center;
 }
 
 .tarjeta-dc {
@@ -400,6 +488,7 @@ body {
     background-size: cover;
     background-position: left;
 }
+
 
 
 @media (min-width: 768px) {
