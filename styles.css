@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #928888;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -32,7 +32,7 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 0px;
     font-size: 1.6em;
     height: 30px;
     overflow: hidden;
@@ -41,8 +41,8 @@ h1 {
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav ul li {
@@ -72,7 +72,7 @@ nav a {
 
 .dropdown-content a {
     color: #080808;
-    padding: 12px 16px;
+    padding: 10px 16px;
     display: block;
     text-decoration: none;
 }
@@ -107,7 +107,7 @@ header.scrolled h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 0px;
 }
 
 .tarjeta-instagram {
@@ -138,7 +138,7 @@ header.scrolled h1 {
 
 
 section {
-    margin-top: 0;
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -148,7 +148,9 @@ section {
 }
 
 .section-menu-lateral{
-    margin-left: 50px;
+    margin-left: 0px;
+    margin-top: 20px;
+
 
 }
 
@@ -160,6 +162,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 60px;
+    margin-top: 0px;
     padding: 0px;
     width: 300px;
     overflow: hidden;
@@ -348,7 +351,7 @@ main {
     flex: 1;
     max-width: 100%; /* Ajusta según sea necesario */
     overflow-y: auto; /* Agrega barra de desplazamiento vertical si el contenido es más grande que la ventana */
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 
@@ -409,7 +412,7 @@ body {
     min-height: 400px;  /* Ajusta la altura mínima de las tarjetas */
     height: auto;  /* Permite que la tarjeta se ajuste dinámicamente en altura según su contenido */
     margin: 30px;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
     text-align: center;
     background-color: #ffffff;
